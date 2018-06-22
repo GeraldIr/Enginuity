@@ -7,16 +7,21 @@ import Services.Service;
 
 public class UpdateSystem implements Service {
 
-	List<Updateable> physicsObjectList = new ArrayList<Updateable>();
+	List<Updateable> updateableList = new ArrayList<Updateable>();
 	
 	
-	public void addPhysicsObject(Updateable newPhysicsObject) {
-		physicsObjectList.add(newPhysicsObject);
+	public void addUpdateable(Updateable newUpdateable) {
+		updateableList.add(newUpdateable);
 	}
+	
+	public void removeUpdateable(Updateable oldUpdateable) {
+		updateableList.remove(oldUpdateable);
+	}
+	
 	@Override
 	public void update(double dt) {
-		for(Updateable p : physicsObjectList)
-			p.update(dt);
+		for(int x = 0; x < updateableList.size(); x++)
+			updateableList.get(x).update(dt);
 		
 	}
 

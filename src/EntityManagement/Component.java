@@ -3,7 +3,7 @@ package EntityManagement;
 
 public class Component {
 	public boolean isActive;
-	public Entity entity;
+	private Entity entity;
 	
 	public Component(Entity entity) {
 		this.entity = entity;

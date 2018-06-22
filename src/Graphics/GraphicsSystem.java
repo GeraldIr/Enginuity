@@ -3,8 +3,9 @@ package Graphics;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+
 import Services.Service;
-import at.fhooe.mtd.sgl.*;
+import at.fhooe.mtd.sgl.Sgl;
 
 public class GraphicsSystem implements Service {
 

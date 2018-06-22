@@ -3,8 +3,6 @@ package Physics;
 import EntityManagement.Component;
 import EntityManagement.Entity;
 import Services.ServiceLocator;
-import Visual.Pose2D;
-import Visual.VisualSystem;
 
 public class Moveable extends Component implements PhysicsObject {
 

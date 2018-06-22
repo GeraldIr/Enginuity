@@ -41,4 +41,11 @@ public class Static2DPose extends Component implements Pose2D {
 		return this;
 	}
 
+	@Override
+	public Pose2D setPos(Pose2D p) {
+		this.x = p.getPosX();
+		this.y = p.getPosY();
+		return this;
+	}
+
 }

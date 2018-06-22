@@ -27,6 +27,7 @@ public class VisualSystem extends AbstractGraphicsLayer {
 	public void render(Graphics2D g) {
 		AffineTransform oldTransform = g.getTransform();
 		for(Visual v : visualList) {
+			super.render(g);
 			v.render(g);
 			g.setTransform(oldTransform);
 		}

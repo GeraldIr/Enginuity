@@ -1,6 +1,5 @@
 package Physics;
 
-import java.util.Vector;
 
 import at.fhooe.mtd.sgl.math.Vector2d;
 

@@ -18,7 +18,7 @@ public class SimpleMovement extends Component implements Updateable {
 
 	@Override
 	public void activate() {
-		ServiceLocator.getInstance().get(UpdateSystem.class).addPhysicsObject(this);
+		ServiceLocator.getInstance().get(UpdateSystem.class).addUpdateable(this);
 	}
 
 	@Override
